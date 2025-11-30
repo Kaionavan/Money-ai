@@ -1,0 +1,200 @@
+/* MoneyAI Custom Styles */
+
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- Variables --- */
+:root {
+    --primary-color: #4CAF50;
+    --dark-color: #313131;
+    --bg-color: #F4F4F4;
+    --surface-color: #FFFFFF;
+    --light-gray: #EAEAEA;
+    --text-color: #555;
+    --border-radius: 12px;
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* --- Global --- */
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #409a44;
+    text-decoration: none;
+}
+
+/* --- Buttons --- */
+.btn {
+    border-radius: 50px; /* Apple-like pill shape */
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+    background-color: #45a049;
+    color: var(--surface-color);
+}
+
+.btn-secondary {
+    background-color: var(--surface-color);
+    color: var(--dark-color);
+    border: 1px solid var(--light-gray);
+}
+
+.btn-secondary:hover {
+    background-color: var(--dark-color);
+    color: var(--surface-color);
+    border-color: var(--dark-color);
+}
+
+
+/* --- Navbar --- */
+.navbar {
+    padding: 1rem 0;
+    background-color: var(--bg-color);
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+.navbar-nav .nav-link {
+    color: var(--text-color);
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+.hero {
+    padding: 6rem 0;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* --- Section --- */
+.section {
+    padding: 5rem 0;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+/* --- Feature Card --- */
+.feature-card {
+    background-color: var(--surface-color);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    text-align: center;
+    border: 1px solid var(--light-gray);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+.feature-card .icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Pricing Card --- */
+.pricing-card {
+    background-color: var(--surface-color);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    border: 1px solid var(--light-gray);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pricing-card.pro {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+.pricing-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+.pricing-card .price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin: 1rem 0;
+}
+.pricing-card .price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+.pricing-card ul li {
+    margin-bottom: 1rem;
+}
+.pricing-card ul li .bi {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--surface-color);
+    padding: 3rem 0;
+    margin-top: 5rem;
+    border-top: 1px solid var(--light-gray);
+    text-align: center;
+}
+
